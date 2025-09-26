@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación Boda Star Wars</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="starwars-bg"></div>
+  <section class="container">
+
+    <!-- Mensaje de bienvenida -->
+    <div class="welcome-msg">
+      <h1>¡Bienvenidos a nuestra boda!</h1>
+      <p>Nos alegra compartir este día tan especial contigo.</p>
+    </div>
+
+    <div class="starwars-intro">
+      <p class="intro-text">
+        ¡En una galaxia muy lejana, la boda del año será vista por todos!
+      </p>
+    </div>
+
+    <h2 class="names">Ximena & Marco</h2>
+    <p class="date">27 de diciembre 2025</p>
+
+    <div class="locations">
+      <h3>Misa</h3>
+      <p>Templo de la Santísima Trinidad, León, Guanajuato a las 13:00 hrs</p>
+      <a href="https://share.google/WGLYfxE6YmKEI361w" target="_blank" class="btn">Ver ubicación</a>
+      <h3>Recepción</h3>
+      <p>Salón Quinta San Javier, Silao,Guanajuato a las 16:00 hrs</p>
+      <a href="https://share.google/V1iWHLZtviwuIF0g5" target="_blank" class="btn">Ver ubicación</a>
+    </div>
+
+    <!-- Sección de Mesa de Regalos -->
+    <div class="gift-table">
+      <h3>Mesa de regalos</h3>
+      <p>¡Tu presencia es nuestro mejor regalo! Pero si deseas obsequiarnos algo, puedes ver nuestra mesa de regalos en Liverpool.</p>
+      <p><strong>Número de evento:</strong> 51752296</p>
+      <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51752296" class="btn" target="_blank">Ver mesa de regalos</a>
+    </div>
+
+    <!-- Sección de Vestimenta -->
+    <div class="dresscode">
+      <h3>Vestimenta</h3>
+      <p class="formal"><strong>Formal</strong></p>
+      <p class="dress-warning">
+        <span>⚠️</span> Agradecemos que los invitados no vistan de <strong>blanco, marfil o champagne</strong>.
+      </p>
+    </div>
+
+    <div class="video-container">
+      <video controls loop>
+        <source src="boda.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+
+
+    <!-- Frase romántica de Anakin -->
+    <div class="starwars-quote">
+      <blockquote>
+        "Ximena… no entiendes lo que significas para mí. He visto miles de estrellas, pero ninguna brilla como tus ojos. Sin ti, toda la galaxia se volvería un lugar vacío."
+      </blockquote>
+    </div>
+
+
+<div class="starwars-quote">
+      <blockquote>
+        "Tu compañía es muy valiosa para nosotros. La invitación está pensada para ti, pero si quisieras venir con alguien más, por favor comunícanoslo al confirmar."
+      </blockquote>
+    </div>
+
+ <h3>Confirmación de asistencia</h3>
+    <form id="confirmation-form">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+
+      <button type="submit">Confirmar asistencia</button>
+    </form>
+    <div id="response-msg"></div>
+     <button id="music-toggle">▶️ Escuchar música</button>
+    <audio id="bgmusic" src="audio.mp3"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
